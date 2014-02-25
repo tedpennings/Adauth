@@ -49,7 +49,7 @@ module Adauth
             
             def cn_groups
                 puts "cn_groups for #{self} - #{self.name} #{self.memberof}"
-              memberof.split(/.*?CN=(.*?),.*/)
+              memberof.split(/.*?CN=(.*?),.*/) unless memberof.nil?
             end
         end
     end
