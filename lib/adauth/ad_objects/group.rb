@@ -48,10 +48,7 @@ module Adauth
             end
             
             def cn_groups
-                puts self
-                puts self.name
-
-                puts memberof
+                puts "cn_groups for #{self} - #{self.name} #{self.memberof}"
               memberof.split(/.*?CN=(.*?),.*/)
             end
         end
