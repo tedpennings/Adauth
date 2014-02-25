@@ -48,6 +48,7 @@ module Adauth
             end
             
             def cn_groups
+                puts memberof
               memberof.split(/.*?CN=(.*?),.*/)
             end
         end
