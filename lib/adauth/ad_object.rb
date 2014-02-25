@@ -182,7 +182,7 @@ module Adauth
         def convert_to_objects(array)
             out = []
             array.each do |entity|
-                out.push convert_to_object(entity)
+                out.push convert_to_object(entity) unless entity.nil?
             end
             out
         end
